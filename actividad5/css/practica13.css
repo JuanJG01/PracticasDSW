@@ -1,0 +1,63 @@
+*
+{
+  background: white;
+  padding: 0;
+  margin-bottom: 20px;
+}
+header
+{
+  width: 100%;
+  height: 20%;
+  margin-bottom: 10px: ;
+  background: silver;
+}
+body
+{
+  height: 100vh;
+}
+nav
+{
+  margin-top: 20px;
+  margin-left: 5%;
+  width:90%;
+  height:60%;
+  background: grey;
+}
+#contenedor
+{
+  display: flex;
+  height: 60%;
+  justify-content: space-around;
+}
+aside
+{
+  width:30%;
+  background: silver;
+}
+section
+{
+  width: 60%;
+  background: silver;
+}
+article
+{
+  margin-top: 17%;
+  margin-left: 5%;
+  height:20%;
+  width:90%;
+  background: grey;
+}
+#art2
+{
+  margin-top: 3%;
+  margin-left: 5%;
+  height:20%;
+  width:90%;
+  background: grey;
+}
+footer
+{
+  width: 100%;
+  height: 10%;
+  background: grey;
+}

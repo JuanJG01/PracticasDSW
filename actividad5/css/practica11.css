@@ -1,0 +1,64 @@
+* {
+  padding: 0;
+  margin-top: 10px;
+}
+
+.encabezado,
+.pie,
+#contenedor {
+  width: 100%;
+}
+
+body {
+  height: 100vh;
+}
+
+.encabezado,
+.pie {
+  height: 10%;
+}
+
+.encabezado {
+  background: lightgreen;
+}
+
+.pie {
+  background: lightgray;
+}
+
+.menu {
+  height: 10%;
+  background: green;
+}
+
+#contenedor {
+  display: flex;
+  height: 75%;
+  justify-content: space-around;
+}
+
+.si,
+.contenido {
+  height: 90%;
+}
+
+.si {
+  width: 20%;
+  background: skyblue;
+  margin-right: auto;
+}
+
+.contenido {
+  width: 50%;
+  background: yellow;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contenido .pie {
+  background: lightgray;
+}
+
+.contenido .si {
+  background: skyblue;
+}
