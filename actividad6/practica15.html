@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento HTML</title>
+    <style>
+        tr:nth-child(2n)
+        {
+            background: rgb(70%, 15%, 10%);
+        }
+
+        section p:nth-last-child(2n)
+        {
+            background: rgb(70%, 95%, 18%);
+        }
+
+        tr:nth-last-child(2n+1)
+        {
+            background: rgb(70%, 95%, 18%);
+        }
+
+        ul li{
+            border-bottom: 1px dotted #000;
+            font-size: 50px;
+        }
+
+        li:first-child
+        {
+            border-top: 1px dotted #AF0;
+            background-color: #AF0;
+            border-bottom: nome;
+            list-style-type: square;
+        }
+
+        li:last-child
+        {
+            color: #FF0;
+            list-style-type: square;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Col1</th>
+            <th>Col2</th>
+        </tr>
+        <tr>
+            <td>Uno</td>
+            <td>Dos</td>
+        </tr>
+        <tr>
+            <td>Tres</td>
+            <td>Cuatro</td>
+        </tr>
+        <tr>
+            <td>Cinco</td>
+            <td>Seis</td>
+        </tr>
+        <tr>
+            <td>Siete</td>
+            <td>Ocho</td>
+        </tr>
+        <tr>
+            <td>Nueve</td>
+            <td>Diez</td>
+        </tr>
+    </table>
+
+    <section>
+        <div>
+            <p>Hola mundo</p>
+            <p>Probando, probando...</p>
+            <p>Me gusta CSS...</P>
+        </div>
+    </section>
+
+    <ul>
+        <li>Primer elemento</li>
+        <li>Segundo elemento</li>
+        <li>Tercer elemento</li>
+        <li>Cuarto elemento</li>
+        <li>Quinto elemento</li>
+    </ul>
+</body>
+</html>
