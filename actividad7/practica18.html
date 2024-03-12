@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Capturar días de la semana</title>
+</head>
+<body>
+
+<script>
+var diasSemana = [];
+
+for (var i = 0; i < 7; i++) {
+    var dia = prompt("Ingresa el día de la semana (" + (i + 1) + "/7):");
+    diasSemana.push(dia);
+}
+var mensaje = "Días de la semana capturados:\n";
+for (var i = 0; i < diasSemana.length; i++) {
+    mensaje += (i + 1) + ". " + diasSemana[i] + "\n";
+}
+alert(mensaje);
+</script>
+
+</body>
+</html>

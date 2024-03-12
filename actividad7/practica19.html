@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Operaciones con el arreglo</title>
+</head>
+<body>
+
+<h2 onclick="encontrarTextoMayor()">Encontrar texto mayor</h2>
+<h2 onclick="operadoresBooleanos()">Operadores booleanos</h2>
+<h2 onclick="operacionesMatematicas()">Operaciones matemáticas</h2>
+
+<script>
+// Definir el arreglo de valores
+var valores = [true, 10, false, "código", "herramientas", 7];
+
+// Función para encontrar cuál de los dos elementos de texto es mayor
+function encontrarTextoMayor() {
+    var texto1 = valores[3];
+    var texto2 = valores[4];
+    var textoMayor = texto1.length > texto2.length ? texto1 : texto2;
+    alert("El texto más largo es: " + textoMayor);
+}
+
+// Función para determinar los operadores necesarios para obtener true y false exclusivamente utilizando uno de los dos valores booleanos del arreglo de forma aleatoria
+function operadoresBooleanos() {
+    var boolIndex = Math.floor(Math.random() * 5);
+    var bool = valores[boolIndex];
+    alert("se obtuvo: " + !bool);
+}
+
+// Función para realizar las operaciones matemáticas con los dos elementos numéricos
+function operacionesMatematicas() {
+    var num1 = valores[1];
+    var num2 = valores[5];
+    alert("Suma: " + (num1 + num2) + "\nResta: " + (num1 - num2) + "\nMultiplicación: " + (num1 * num2) + "\nDivisión: " + (num1 / num2) + "\nMódulo: " + (num1 % num2));
+}
+</script>
+
+</body>
+</html>
