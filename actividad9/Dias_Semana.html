@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Días de la Semana</title>
+</head>
+<body>
+  <h1>Días de la Semana</h1>
+  
+  <div id="diasSemana">
+  </div>
+
+  <br>
+
+  <input type="text" id="nuevoDia" placeholder="Agregar un día">
+  <button onclick="agregarDia()">Agregar Día</button>
+
+  <br><br>
+
+  <input type="number" id="indiceEliminar" placeholder="Índice del día a eliminar">
+  <button onclick="eliminarDia()">Eliminar Día</button>
+
+  <script>
+    let dias = ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo'];
+
+    function mostrarDias() {
+      const diasSemana = document.getElementById('diasSemana');
+      diasSemana.innerHTML = '';
+
+      dias.forEach(function(dia, indice) {
+        const p = document.createElement('p');
+        p.textContent = `${indice + 1}. ${dia}`;
+        diasSemana.appendChild(p);
+      });
+    }
+function agregarDia() {
+      const nuevoDiaInput = document.getElementById('nuevoDia');
+      const nuevoDia = nuevoDiaInput.value.trim();
+
+      if (nuevoDia !== '') {
+        dias.push(nuevoDia);
+        nuevoDiaInput.value = ''; 
+        mostrarDias();
+      }
+    }
+function eliminarDia() {
+      const indiceEliminarInput = document.getElementById('indiceEliminar');
+      const indice = parseInt(indiceEliminarInput.value) - 1;
+
+      if (!isNaN(indice) && indice >= 0 && indice < dias.length) {
+        dias.splice(indice, 1);
+        indiceEliminarInput.value = '';
+        mostrarDias();
+      }
+    }
+    mostrarDias();
+  </script>
+</body>
+</html> 

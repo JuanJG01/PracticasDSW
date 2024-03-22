@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meses del Año</title>
+</head>
+<body>
+  <h1>Meses del Año (Omitiendo Julio)</h1>
+  
+  <ul id="listaMeses"></ul>
+
+  <script>
+    const meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre'];
+
+    const diciembre = 'Diciembre';
+
+    meses.push(diciembre);
+
+    const listaMeses = document.getElementById('listaMeses');
+
+    for (const mes of meses) {
+      if (mes === 'Julio') {
+        continue;
+      }
+      const li = document.createElement('li');
+      li.textContent = mes;
+      listaMeses.appendChild(li);
+    }
+  </script>
+</body>
+</html>

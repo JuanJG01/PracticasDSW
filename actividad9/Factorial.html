@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Factorial con Do-While</title>
+</head>
+<body>
+  <h1>Factorial con Do-While</h1>
+  
+  <p>El factorial de 5 es: <span id="resultado"></span></p>
+
+  <script>
+    let numero = 5;
+    let factorial = 1;
+
+    do {
+      factorial *= numero;
+      numero--;
+    } while (numero > 0);
+
+    const resultadoSpan = document.getElementById('resultado');
+    resultadoSpan.textContent = factorial;
+  </script>
+</body>
+</html>

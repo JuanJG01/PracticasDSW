@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejemplos de Bucles For con Meses</title>
+</head>
+<body>
+  <h1>Ejemplos de Bucles For con Meses</h1>
+  
+  <div id="mesesLista"></div>
+
+  <script>
+    const meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre'];
+
+    const mesesLista = document.getElementById('mesesLista');
+
+    for (let i = 0; i < meses.length; i++) {
+      const parrafo = document.createElement('p');
+      parrafo.textContent = meses[i];
+      mesesLista.appendChild(parrafo);
+    }
+
+    const separador = document.createElement('hr');
+    mesesLista.appendChild(separador);
+
+    for (let indice in meses) {
+      const parrafo = document.createElement('p');
+      parrafo.textContent = meses[indice];
+      mesesLista.appendChild(parrafo);
+    }
+
+    const separador2 = document.createElement('hr');
+    mesesLista.appendChild(separador2);
+
+    for (let mes of meses) {
+      const parrafo = document.createElement('p');
+      parrafo.textContent = mes;
+      mesesLista.appendChild(parrafo);
+    }
+
+    const separador3 = document.createElement('hr');
+    mesesLista.appendChild(separador3);
+
+    meses.forEach(function(mes) {
+      const parrafo = document.createElement('p');
+      parrafo.textContent = mes;
+      mesesLista.appendChild(parrafo);
+    });
+  </script>
+</body>
+</html>

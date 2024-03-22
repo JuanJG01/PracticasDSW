@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bucle For con Mensajes</title>
+</head>
+<body>
+  <h1>Bucle For con Mensajes</h1>  
+  <script>
+const cuerpo = document.body;
+
+for (let i = 1; i <= 7; i++) {
+  const mensaje = document.createElement('p');
+  if (i === 4) {
+    mensaje.textContent = "Hola, soy el 4to";
+  } else {
+    mensaje.textContent = "Hola";
+  }
+
+  cuerpo.appendChild(mensaje);
+
+  if (i === 7) {
+    const mensajeFinal = document.createElement('p');
+    mensajeFinal.textContent = "Acabamos de saludar";
+    cuerpo.appendChild(mensajeFinal);
+  }
+}
+  </script>
+</body>
+</html>
+ 
