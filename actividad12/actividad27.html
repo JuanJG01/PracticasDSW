@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="practica27.css"> <!-- Se enlaza la hoja de estilos CSS -->
+    <title>PLANETAS</title> <!-- Título de la página -->
+</head>
+<body>
+    <header>PLANETAS DEL SISTEMA SOLAR</header> <!-- Encabezado de la página -->
+    <h1>¿Qué planeta del sistema solar es?</h1> <!-- Título principal -->
+
+    <!-- Pantalla inicial -->
+    <div id="pantalla-inicial">
+        <p>¿A qué Planeta pertenece la imagen?</p> <!-- Pregunta para iniciar el juego -->
+        <button class="btn" onclick="comenzarJuego()">JUGAR</button> <!-- Botón para iniciar el juego -->
+        <a href="Maravillas.html"><button class="btn">7 Maravillas</button></a>
+    </div>
+
+    <!-- Pantalla juego -->
+    <div class="pantalla-juego" id="pantalla-juego">
+        <img src="img/chichen-itza.svg" alt="" id="imgMaravilla"> <!-- Imagen de la maravilla actual -->
+        <div class="opciones">
+            <!-- Opciones de respuesta -->
+            <div class="opcion" id="op0" onclick="comprobarRespuesta(0)">
+                <div class="letra" id="l0">A</div>
+                <div class="nombre" id="n0">OPCION A</div>
+            </div>
+            <div class="opcion" id="op1" onclick="comprobarRespuesta(1)">
+                <div class="letra" id="l1">B</div>
+                <div class="nombre" id="n1">OPCION B</div>
+            </div>
+            <div class="opcion" id="op2" onclick="comprobarRespuesta(2)">
+                <div class="letra" id="l2">C</div>
+                <div class="nombre" id="n2">OPCION C</div>
+            </div>
+            <div class="opcion" id="op3" onclick="comprobarRespuesta(3)">
+                <div class="letra" id="l3">D</div>
+                <div class="nombre" id="n3">OPCION D</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pantalla final -->
+    <div id="pantalla-final">
+        <h2>CORRECTAS: <span id="numCorrectas">3</span></h2> <!-- Número de respuestas correctas -->
+        <h2>INCORRECTAS: <span id="numIncorrectas">2</span></h2> <!-- Número de respuestas incorrectas -->
+        <button class="btn" onclick="volverAlInicio()">VOLVER AL INICIO</button> <!-- Botón para volver al inicio -->
+    </div>
+
+    <script src="practica27.js"></script> <!-- Se enlaza el archivo JavaScript -->
+</body>
+</html>
