@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Práctica 30</title>
+    <link rel="stylesheet" href="css/Practica30.css">
+  </head>
+  <body>
+    <table>
+     <form class="" action="index.html" method="post" id="formulario">
+       <div class="contenedor">
+         <h1>Registro</h1>
+       </div>
+       <tr>
+         <td>Nombres: <br><input type="text" name="nombre" class="informacion"/></td>
+         <td>Apellidos: <br><input type="text" name="apellidos" class="informacion"/></td>
+       </tr>
+       <tr>
+         <td>Edad: <br><input type="number" name="edad" class="informacion"/></td>
+         <td>Sexo: <br><select name="sexo" class="informacion2">
+           <option value= "femenino">FEMENINO</option>
+           <option value= "masculino">MASCULINO</option>
+         </select></td>
+       </tr>
+       <tr>
+         <td>Ciudad: <br><select name="Ciudad" class="informacion2" id="ciudad" onchange="habilitar()">
+           <option value= "Ensenada">ENSENADA</option>
+           <option value= "Tijuana">TIJUANA</option>
+           <option value= "Rosarito">ROSARITO</option>
+           <option value= "Tecate">TECATE</option>
+           <option value= "Mexicali">MEXICALI</option>
+         </select></td>
+         <td>Otro: <br><input type="text" name="otro" class="informacion"/></td>
+       </tr>
+       <tr>
+         <td>Otro: <br><select name="otro2" class="informacion2">
+           <option value= "si">SI</option>
+           <option value= "no">NO</option></td>
+         <td>Celular (10 dígitos): <br><input type="tel" name="Celular" value="" class="informacion"></td>
+       </tr>
+       <tr>
+         <td>Transporte: <br><select name="transporte"class="informacion2" id="transporte" disabled>
+           <option value= "si">SI</option>
+           <option value= "no">NO</option></td>
+         <td rowspan="2">Comentarios: <br><textarea name="comentarios" rows="7" cols="30" class="comentarios"></textarea></td>
+       </tr>
+       <tr>
+         <td>Camisa: <br><select name="camisa" class="informacion2" onchange="aparecer()" id="camisa">
+           <option value= "si">SI</option>
+           <option value= "no">NO</option></select></td>
+       </tr>
+       <tr>
+         <td>Talla: <br><select name="tallas"class="informacion2" id="talla">
+           <option value= "S">S</option>
+           <option value= "M">M</option>
+           <option value= "L">L</option>
+           <option value= "XL">XL</option></select></td>
+       </tr>
+       <tr>
+         <td colspan="2"><input type="submit" name="enviar" class="boton"></td>
+       </tr>
+     </form>
+   </table>
+
+  </body>
+  <script type="text/javascript" src="js/Practica30.js"></script>
+</html>

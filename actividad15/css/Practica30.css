@@ -1,0 +1,55 @@
+body{
+  background-image: url(../imagenes/fondo.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #0a0f0f;
+  font-family: 'Open Sans', Helvetica;
+}
+
+table{
+  color: white;
+  margin: auto;
+  background: rgba(1, 46, 11, 0.637);
+  border-radius: 10px;
+  border-spacing: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.contenedor{
+  text-align: center;
+}
+
+h1,h2{
+  color: white;
+}
+
+.boton{
+  background: green;
+  color: white;
+  margin: auto;
+  width: 100%;
+  font-size: 20px;
+}
+
+.informacion{
+  padding: 5px;
+  width: 225px;
+}
+
+.informacion2{
+  padding: 6px;
+  width: 240px;
+  font-size: 15px;
+}
+
+.comentarios{
+  width: 230px;
+}
+
+.talla{
+  display: none;
+  padding: 6px;
+  width: 240px;
+}
