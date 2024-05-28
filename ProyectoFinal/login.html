@@ -1,0 +1,81 @@
+<!-- Del Toro Cruz Joseph Vladimir -->
+<!-- Jiménez García Juan Emanuel -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <style>
+       @import url("https://fonts.googleapis.com/css2?family=El+Messiri&display=swap");
+        body {
+            background-image:  url(img/cascada1.jpeg);
+            background-size: cover;
+            background-position: center;
+            font-family: 'El Messiri';
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        form {
+            text-align: center;
+        }
+        .input-container {
+            margin: 10px;
+        }
+        .input-container label {
+            display: block;
+            font-size: 18px;
+            color: azure;
+        }
+        .input-container input[type="text"],
+        .input-container input[type="password"] {
+            width: 300px;
+            height: 30px;
+            font-size: 16px;
+            border-color: #224aff;
+        }
+
+        .opcion{
+            color: azure;
+        }
+        #boton{
+            text-decoration: none;
+            color:white;
+            background-color: #0407ce;
+            padding: 8px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        #boton:hover {
+            background-color: #0051ff;
+        }
+
+    </style>
+        <link rel="shortcut icon" href="img/logotipo.png" type="image/x-icon">
+</head>
+<body>
+
+    <form method="post" action="login2.php">
+        <div class="input-container">
+            <label for="nombre_usuario">Nombre de usuario:</label>
+            <input type="text" id="nombre_usuario" name="nombre_usuario" placeholder="Ingrese nombre de usuario" required>
+        </div>
+        <div class="input-container">
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena" placeholder="Ingrese contraseña" required>
+        </div>
+
+        <div class = "opcion">
+        Si no tiene una cuenta haga click <a href="registro_usuarios.html">Aquí</a>
+        </div>
+
+        <div class="input-container">
+            <input type="submit" id= "boton" value="Iniciar sesión">
+        </div>
+    </form>
+</body>
+</html>

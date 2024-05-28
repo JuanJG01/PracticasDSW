@@ -1,0 +1,107 @@
+<!-- Del Toro Cruz Joseph Vladimir -->
+<!-- Jiménez García Juan Emanuel -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Registro usuarios</title>
+    <style>
+
+        @import url("https://fonts.googleapis.com/css2?family=El+Messiri&display=swap");
+
+        body {
+
+           background-image:  url(img/cascada2.jpg);
+           background-size: cover;
+           background-position: center;
+           font-family: 'El Messiri';
+           margin: 40px;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           color:azure;
+        }
+
+        table{
+margin: auto;
+background:  #ffffffe9;
+border-radius: 20px;
+border-spacing: 40px;
+padding-left: 40px;
+padding-right: 40px;
+color:black;
+}
+
+.boton1{
+font-family: 'El Messiri';
+text-decoration: none;
+color:white;
+background-color: #557cff;
+padding: 8px;
+border-radius: 8px;
+cursor: pointer;
+}
+
+.boton1:hover, .boton2:hover{
+background-color: #22f0ff;
+}
+    </style>
+        <link rel="shortcut icon" href="img/logotipo.png" type="image/x-icon">
+</head>
+<body>
+    <form action="registro_usuario.php" method="post">
+        <center>
+            <h1>Registro de usuario</h1>
+
+            <h2>Ingresar los datos</h2>
+
+            <table>
+
+                <tr>
+                    <td align="right">Nombre: </td>
+                    <td><input type="text" name="nombre" placeholder="Ingrese nombre" oninput="validarLetras(this)" required><br></td>                
+                </tr>
+
+                <tr>
+                    <td align="right">Apellido: </td>
+                    <td><input type="text" name="apellido" placeholder="Ingrese apellido" oninput="validarLetras(this)" required><br></td>
+                </tr>
+
+                <tr>
+                    <td align="right">Celular: </td>
+                    <td><input type="tel" name="telefono" placeholder="Ingrese número de teléfono"  pattern="[0-9]{10}" oninput="validarNumeros(this)" required></td>
+                </tr>
+
+                <tr>
+                    <td>Correo electrónico: </td>
+                    <td><input type="email" name="correo" placeholder="Ingrese correo electrónico" required></td>
+                </tr>
+
+                <tr>
+                    <td align="right">Usuario: </td>
+                    <td><input type="text" name="usuario" placeholder="Ingrese nombre de usuario" required><br></td>
+                </tr>
+
+                <tr>
+                    <td align="right">Contraseña: </td>
+                    <td><input type="password" name="contraseña" placeholder="Ingrese contraseña" required></td>
+                </tr>
+
+                <tr>
+                    <td align="right">Tipo: </td>
+                    <td>
+                        <select name="tipo_usuario">
+                            <option value='Usuario'>Usuario</option>
+                            <option value='Administrador'>Administrador</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            <input type="submit" name="guardar" class= "boton1" value="Guardar"></td>
+
+        </form>
+    </center>
+</body>
+<script type="text/javascript" src="js/registro_usuarios.js"></script>
+</html>
